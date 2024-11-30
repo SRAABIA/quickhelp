@@ -7,7 +7,15 @@ const DrawerLayout = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Drawer>
-        <Drawer.Screen name='index' />
+        <Drawer.Screen name='index' options={{
+            drawerLabel: 'Home',
+            title: 'Index Page of a simple Website',
+          }}/>
+
+        <Drawer.Screen name='about'  options={{
+            drawerLabel: 'About',
+            title: 'About of this Website',
+          }}/>
       </Drawer>
     </GestureHandlerRootView >
   )
